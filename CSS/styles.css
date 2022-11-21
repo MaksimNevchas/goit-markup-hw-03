@@ -387,3 +387,6 @@ section {
   padding-right: 0px;
   gap: 30px;
 }
+.porfolio-list > li {
+  border-bottom: 1px solid #ececec;
+}
