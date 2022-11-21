@@ -32,6 +32,9 @@ h1 {
 h2 {
   margin: 0px;
 }
+section {
+  padding: 94px 0px 94px 0px;
+}
 /* Шапка */
 .logo {
   font-family: "Raleway";
@@ -123,12 +126,15 @@ h2 {
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0px;
 }
 .advantages-text {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* Напрямки нашої діяльності */
 .activity-title {
@@ -197,9 +203,11 @@ h2 {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   margin-right: 8px;
   margin-left: 8px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .portfolio-navig-btn:hover,
 .portfolio-navig-btn:focus {
@@ -222,11 +230,18 @@ h2 {
 }
 /* Для ДЗ №3 */
 /* Шапка */
+.container-first {
+  flex-direction: column;
+  width: 1600px;
+  height: 2346px;
+  justify-content: center;
+}
 .box-on-top {
   display: flex;
   width: 1600px;
-  height: 80px;
+  height: 81px;
   margin: 0px;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   margin: 24px 0px 25px 215px;
@@ -253,23 +268,29 @@ h2 {
 .hero-title-box {
   width: 696px;
   height: 120px;
-  margin: 152px 445px 30px 459px;
+  margin: 106px 452px 30px 452px;
   text-align: center;
 }
 .service-order {
-  width: 216px;
+  width: 200px;
   height: 50px;
-  margin: 0px 699px 205px 685px;
+  margin: 0px 700px 106px 700px;
   padding: 0px;
   border-width: 0px;
   border-radius: 4px;
 }
 /* Наші переваги */
+.advantages {
+  width: 1170px;
+  height: 192px;
+  padding-bottom: 0px;
+}
 .advantages-list {
   display: flex;
   width: 1170px;
   height: 98px;
   justify-content: center;
+  margin: 0px;
 }
 .advantages-list > li {
   width: 270px;
@@ -278,8 +299,10 @@ h2 {
 /* Наша діяльність */
 .activity {
   width: 1170px;
-  height: 386px;
-  margin: 94px 215px;
+  height: 480px;
+  padding-bottom: 0px;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 .activity-list {
   display: flex;
@@ -300,7 +323,7 @@ h2 {
   width: 1170px;
   height: 368px;
   justify-content: space-between;
-  margin: 50px 215px 94px 215px;
+  margin: 50px 215px 0px 215px;
 }
 /* Підвал */
 .bottom-block {
@@ -321,7 +344,20 @@ h2 {
 .post-addres {
   width: 231px;
   height: 21px;
-  margin: 20px 0px 9px 0px;
+  margin-top: 20px;
+}
+.contact-foot {
+  margin: 0px;
+}
+.contact-navig-foot {
+  padding-top: 9px;
+}
+/* Сторінка Портфоліо */
+.container {
+  flex-direction: column;
+  width: 1600px;
+  height: 1880px;
+  justify-content: center;
 }
 
 /* Навігація сторінки Портфоліо */
@@ -330,10 +366,24 @@ h2 {
   justify-content: center;
 }
 /* Приклади робіт */
+.portfolio {
+  width: 1170px;
+  height: 1548px;
+  margin: auto;
+}
+.portfolio-navig-btn {
+  border-width: 0px;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  margin: 0px 8px 0px 0px;
+}
+.first-btn {
+  padding: 0px 3px 0px 3px;
+}
 .porfolio-list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
   padding-right: 0px;
-  /* gap: 30px; */
+  gap: 30px;
 }
