@@ -24,7 +24,8 @@ a {
   text-decoration: none;
 }
 ul {
-  padding: 0px;
+  list-style: none;
+  margin: 0;
 }
 h1 {
   margin: 0px;
@@ -49,12 +50,7 @@ section {
 .studio-word {
   color: var(--black-color);
 }
-.site-navig {
-  list-style: none;
-  width: 281px;
-  height: 16px;
-  margin: 32px 0px 32px 93px;
-}
+
 .site-navig a {
   color: var(--title-color);
   font-weight: 500;
@@ -66,9 +62,7 @@ section {
 .site-navig a:focus {
   color: var(--accent-color);
 }
-.contact-navig {
-  list-style: none;
-}
+
 .contact-navig a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -84,6 +78,9 @@ section {
 /* Герой */
 .hero {
   background-color: var(--footer-background);
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -119,9 +116,6 @@ section {
   justify-content: center;
   margin-left: 215px;
 }
-.advantages-list {
-  list-style: none;
-}
 .advantages-title {
   color: var(--title-color);
   font-weight: 700;
@@ -144,13 +138,8 @@ section {
   line-height: 1.17;
   text-align: center;
 }
-.activity-list {
-  list-style: none;
-}
 /* Наші співробітники */
-.team-list {
-  list-style: none;
-}
+
 .team-title {
   color: var(--title-color);
   font-weight: 700;
@@ -193,9 +182,6 @@ section {
 }
 /* Сторінка "Портфолио" */
 /* Навигация сторінки */
-.portfolio-navig {
-  list-style: none;
-}
 
 .portfolio-navig-btn {
   color: var(--title-color);
@@ -213,9 +199,6 @@ section {
 .portfolio-navig-btn:focus {
   background-color: var(--accent-color);
 }
-.porfolio-list {
-  list-style: none;
-}
 .portfolio-item {
   color: var(--title-color);
   font-weight: 700;
@@ -230,59 +213,74 @@ section {
 }
 /* Для ДЗ №3 */
 /* Шапка */
-.container-first {
-  flex-direction: column;
-  width: 1600px;
-  height: 2346px;
+.container {
+  width: 1200px;
+  display: flex;
   justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.box-on-top {
+/* .box-on-top { 
   display: flex;
   width: 1600px;
   height: 81px;
   margin: 0px;
   border-bottom: 1px solid #ececec;
-}
+}*/
 .logo {
-  margin: 24px 0px 25px 215px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .site-navig {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  padding: 32px 0px;
 }
-.contact-navig {
-  display: flex;
-  margin: 32px 215px 32px 344px;
-}
-.mail {
+.site-navig > li {
   margin-right: 50px;
 }
+.site-navig > li :last-child {
+  margin-right: 0px;
+}
+
+.contact-navig {
+  display: flex;
+  margin-left: auto;
+  padding: 32px 0;
+}
+
+/* .mail { 
+  margin-right: 50px;
+}*/
 /* Герой */
-.hero {
+.hero-box {
   display: flex;
   flex-direction: column;
-  width: 1600px;
-  height: 600px;
-  justify-content: space-between;
+  width: 0;
+  height: 0;
+  /* justify-content: space-between; */
 }
-.hero-title-box {
-  width: 696px;
-  height: 120px;
-  margin: 106px 452px 30px 452px;
+.hero-title {
+  max-width: 696;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .service-order {
   width: 200px;
   height: 50px;
-  margin: 0px 700px 106px 700px;
+  margin: 0;
   padding: 0px;
   border-width: 0px;
   border-radius: 4px;
 }
 /* Наші переваги */
 .advantages {
-  width: 1170px;
-  height: 192px;
+  width: 0;
+  height: 0;
   padding-bottom: 0px;
 }
 .advantages-list {
@@ -331,9 +329,6 @@ section {
   height: 252px;
   padding: 60px 1154px 60px 215px;
 }
-.contact-foot {
-  list-style: none;
-}
 .logo-foot {
   font-family: "Raleway";
   font-style: normal;
@@ -353,12 +348,6 @@ section {
   padding-top: 9px;
 }
 /* Сторінка Портфоліо */
-.container {
-  flex-direction: column;
-  width: 1600px;
-  height: 1880px;
-  justify-content: center;
-}
 
 /* Навігація сторінки Портфоліо */
 .portfolio-navig {
