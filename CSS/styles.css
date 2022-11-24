@@ -303,7 +303,15 @@ section {
 .bottom-block {
   padding: 60px 0px;
   text-align: left;
+  height: 252px;
 }
+/* .container-foot {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  justify-content: flex-start;
+  align-content: flex-start;} */
+
 .logo-foot {
   font-family: "Raleway";
   font-style: normal;
@@ -353,4 +361,7 @@ section {
 }
 .porfolio-list > li {
   border-bottom: 1px solid #ececec;
+}
+.container-portfolio {
+  width: 1200px;
 }
