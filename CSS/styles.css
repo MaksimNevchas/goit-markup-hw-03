@@ -195,9 +195,9 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  margin: 0px 8px 0px 0px;
+  /* margin: 0px 8px 0px 0px;
   margin-right: 8px;
-  margin-left: 8px;
+  margin-left: 8px; */
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -216,6 +216,7 @@ p {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
+  margin-bottom: 0;
 }
 /* Для ДЗ №3 */
 /* Шапка */
@@ -385,7 +386,7 @@ p {
 .portfolio-navig > li {
   margin-right: 8px;
 }
-.portfolio-navig > li :last-child {
+.portfolio-navig > li:last-child {
   margin-right: 0;
 }
 .portfolio-navig-btn {
