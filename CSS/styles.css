@@ -22,6 +22,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 ul {
   list-style: none;
@@ -194,6 +195,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  margin: 0px 8px 0px 0px;
   margin-right: 8px;
   margin-left: 8px;
   text-align: center;
@@ -228,14 +230,10 @@ p {
   text-align: center; */
 }
 .box-top {
-  /* width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; */
   display: flex;
   justify-content: center;
   text-align: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -316,8 +314,10 @@ p {
   margin-top: 50px;
   padding-left: 0;
 }
+
 .team-list > li {
   margin-right: 30px;
+  padding-bottom: 30px;
 }
 .team-list :last-child {
   margin-right: 0;
@@ -325,8 +325,8 @@ p {
 /* Підвал */
 .bottom-block {
   padding: 60px 0px;
-  text-align: left;
-  height: 252px;
+  /* text-align: left; */
+  /* height: 252px; */
 }
 /* .container-foot {
   display: flex;
@@ -342,16 +342,32 @@ p {
   font-size: 26px;
   line-height: 1.2;
 }
-.post-addres {
-  width: 231px;
-  height: 21px;
-  margin-top: 20px;
-}
 .contact-foot {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
 }
-.contact-navig-foot {
-  padding-top: 9px;
+.contact-foot > li {
+  padding-bottom: 9px;
+}
+.contact-foot > li:first-child {
+  padding-bottom: 20px;
+}
+.contact-foot > li:last-child {
+  padding-bottom: 0;
+}
+.foot-navig {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.foot-navig a:hover,
+.foot-navig a:focus {
+  color: var(--accent-color);
 }
 /* Сторінка Портфоліо */
 
@@ -359,18 +375,23 @@ p {
 .portfolio-navig {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 0;
 }
 /* Приклади робіт */
 .portfolio {
-  width: 1170px;
-  height: 1548px;
-  margin: auto;
+  padding: 94px 0px;
+}
+.portfolio-navig > li {
+  margin-right: 8px;
+}
+.portfolio-navig > li :last-child {
+  margin-right: 0;
 }
 .portfolio-navig-btn {
   border-width: 0px;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
-  margin: 0px 8px 0px 0px;
 }
 .first-btn {
   padding: 0px 3px 0px 3px;
@@ -385,9 +406,6 @@ p {
 .porfolio-list > li {
   border-bottom: 1px solid #ececec;
 }
-.container-portfolio {
+/* .container-portfolio {
   width: 1200px;
-}
-.team-list > li {
-  padding-bottom: 30px;
-}
+} */
