@@ -34,10 +34,13 @@ h1 {
 h2 {
   margin: 0;
 }
-section {
+p {
+  margin-bottom: 0;
+}
+/* .section {
   padding: 94px 0px 94px 0px;
   text-align: center;
-}
+} */
 /* Шапка */
 .logo {
   font-family: "Raleway";
@@ -80,7 +83,9 @@ section {
 /* Герой */
 .hero {
   background-color: var(--footer-background);
-  height: 520px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -218,10 +223,21 @@ section {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+}
+.box-top {
+  /* width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; */
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .logo {
   margin-right: 93px;
   padding-top: 24px;
@@ -257,11 +273,14 @@ section {
   border-radius: 4px;
 }
 /* Наші переваги */
-
+.advantages {
+  padding: 94px 0px 94px 0px;
+}
 .advantages-list {
   display: flex;
   text-align: left;
   margin: 0px;
+  padding: 0;
 }
 .advantages-list > li {
   margin-right: 30px;
@@ -271,7 +290,7 @@ section {
 }
 /* Наша діяльність */
 .activity {
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 .activity-list {
   display: flex;
@@ -287,11 +306,15 @@ section {
   margin-right: 0;
 }
 /* Наша команда */
-
+.team {
+  padding: 94px 0px 94px 0px;
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  padding-left: 0;
 }
 .team-list > li {
   margin-right: 30px;
@@ -364,4 +387,7 @@ section {
 }
 .container-portfolio {
   width: 1200px;
+}
+.team-list > li {
+  padding-bottom: 30px;
 }
