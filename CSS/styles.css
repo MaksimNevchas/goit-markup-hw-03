@@ -38,6 +38,11 @@ h2 {
 p {
   margin-bottom: 0;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* .section {
   padding: 94px 0px 94px 0px;
   text-align: center;
@@ -157,6 +162,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 0;
 }
 /* "Підвал" */
 .bottom-block {
@@ -204,6 +210,7 @@ p {
 .portfolio-navig-btn:hover,
 .portfolio-navig-btn:focus {
   background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .portfolio-item {
   color: var(--title-color);
@@ -211,6 +218,7 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .portfolio-text {
   color: var(--primary-text-color);
@@ -232,8 +240,11 @@ p {
 }
 .box-top {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
+  /* justify-content: center;
+  text-align: center; */
+}
+.head-box {
   border-bottom: 1px solid #ececec;
 }
 
@@ -314,6 +325,8 @@ p {
   justify-content: space-between;
   margin-top: 50px;
   padding-left: 0;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .team-list > li {
@@ -350,7 +363,13 @@ p {
   text-align: left;
   padding: 0;
 }
-.contact-foot > li {
+.contact-navig-foot {
+  margin-top: 9px;
+}
+.post-addres {
+  margin-top: 20px;
+}
+/* .contact-foot > li {
   padding-bottom: 9px;
 }
 .contact-foot > li:first-child {
@@ -358,7 +377,7 @@ p {
 }
 .contact-foot > li:last-child {
   padding-bottom: 0;
-}
+} */
 .foot-navig {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -404,8 +423,13 @@ p {
   padding-right: 0px;
   gap: 30px;
 }
-.porfolio-list > li {
+/* .porfolio-list > li {
+} */
+.portfolio-once {
+  padding: 20px 0px 20px 24px;
   border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
 }
 /* .container-portfolio {
   width: 1200px;
